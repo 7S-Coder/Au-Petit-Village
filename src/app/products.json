@@ -1,0 +1,25 @@
+{
+    "Products" : [
+        {
+            "id": 1,
+            "name": "Figurine Astérix",
+            "description": "Une figurine détaillée d'Astérix, le héros gaulois.",
+            "price": 29.99,
+            "imageUrl": "assets/images/asterix-figurine.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Figurine Obélix",
+            "description": "Une figurine détaillée d'Obélix, le fidèle compagnon d'Astérix.",
+            "price": 34.99,
+            "imageUrl": "assets/images/obelix-figurine.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Figurine Idéfix",
+            "description": "Une figurine adorable d'Idéfix, le chien d'Obélix.",
+            "price": 19.99,
+            "imageUrl": "assets/images/idefix-figurine.jpg"
+        }
+    ]
+}

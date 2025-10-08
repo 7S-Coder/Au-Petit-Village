@@ -1,1 +1,24 @@
-<p>products works!</p>
+<main>
+    <h1>Nos figurines</h1>
+    <div class="sort-buttons">
+        <button (click)="sortProducts('asc')">Trier par prix croissant</button>
+        <button (click)="sortProducts('desc')">Trier par prix décroissant</button>
+    </div>
+    <div class="product-grid">
+        @for (product of products; track product.id) {
+            <div class="product-card">
+                <a [routerLink]="['/products', product.id]">
+                    <img class="product-image" [src]="product.imageUrl" [alt]="product.name">
+                    <div class="product-details">
+                        <h2 class="product-name">{{ product.name }}</h2>
+                        <p class="product-description">{{ product.description }}</p>
+                        <span class="product-price">{{ product.price | currency }}</span>
+                    </div>
+                </a>
+            </div>
+        } @empty {
+            <p>Il n'y a aucun produit disponible.</p>
+        }
+    </div>
+</main>
+
