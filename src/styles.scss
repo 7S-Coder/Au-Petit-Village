@@ -45,18 +45,22 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: $beige-color;
+
 }
 
 main {
     padding: 2rem;
     min-height: calc(100vh - 165px);
-    background-color: $beige-color;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
     color: $red-color;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 p, span, a, li, div, em, button, input, textarea {
@@ -85,10 +89,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     transition: color 0.3s;
 }
 
-.social-links mat-icon:hover {
-    color: #1DA1F2; /* Couleur pour Twitter */
-}
 
+
+// Le styles de mes cards de produits
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -103,4 +106,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .product-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: $yellow-color;
+
+    &:hover {
+        text-decoration: underline;
+        color: $red-color;
+    }
 }

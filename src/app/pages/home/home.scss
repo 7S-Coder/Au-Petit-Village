@@ -28,7 +28,16 @@
             color: $black-color;
         }
 
-        
+        .product-card {
+            .product-image {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin-bottom: 1rem;
+            }
+        }
 
         .discover-products-button {
             display: inline-block;

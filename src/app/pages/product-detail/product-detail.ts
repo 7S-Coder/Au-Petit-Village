@@ -1,23 +1,21 @@
 import { Component } from '@angular/core';
-import { CurrencyPipe, CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ActivatedRoute, Router } from '@angular/router';
+import productsData from '../../products.json';
 
 @Component({
   selector: 'app-product-detail',
-  imports: [CommonModule, CurrencyPipe],
+  imports: [CommonModule],
   templateUrl: './product-detail.html',
   styleUrl: './product-detail.scss'
 })
 export class ProductDetail {
-  product = {
-    id: 1,
-    name: 'Figurine Astérix',
-    description: "Une figurine détaillée d'Astérix, le héros gaulois.",
-    price: 29.99,
-    imageUrl: 'assets/images/asterix-figurine.jpg'
-  };
+  product: any;
 
-  constructor(private router: Router) {}
+  constructor(private route: ActivatedRoute, private router: Router) {
+    const productId = Number(this.route.snapshot.paramMap.get('id'));
+    this.product = productsData.Products.find(p => p.id === productId);
+  }
 
   goBack(): void {
     this.router.navigate(['/products']);

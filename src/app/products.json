@@ -2,24 +2,24 @@
     "Products" : [
         {
             "id": 1,
-            "name": "Figurine Astérix",
-            "description": "Une figurine détaillée d'Astérix, le héros gaulois.",
+            "name": "Figurine Astérix et ces amis",
+            "description": "Une figurine détaillée d'Astérix en compagnie d'Obélix et Panoramix, le héros gaulois.",
             "price": 29.99,
-            "imageUrl": "assets/images/asterix-figurine.jpg"
+            "imageUrl": "asterix.jpg"
         },
         {
             "id": 2,
-            "name": "Figurine Obélix",
-            "description": "Une figurine détaillée d'Obélix, le fidèle compagnon d'Astérix.",
+            "name": "Figurine les romains",
+            "description": "Une figurine détaillée des romains, les ennemis d'Astérix.",
             "price": 34.99,
-            "imageUrl": "assets/images/obelix-figurine.jpg"
+            "imageUrl": "romains.jpg"
         },
         {
             "id": 3,
-            "name": "Figurine Idéfix",
-            "description": "Une figurine adorable d'Idéfix, le chien d'Obélix.",
+            "name": "Figurine Pumba",
+            "description": "Une figurine adorable de Pumba, le sanglier comique.",
             "price": 19.99,
-            "imageUrl": "assets/images/idefix-figurine.jpg"
+            "imageUrl": "pumba.jpg"
         }
     ]
 }
